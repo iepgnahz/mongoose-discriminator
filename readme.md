@@ -1,5 +1,6 @@
 ## discriminator 和 populate 使用的例子
 
+1. 需要提前准备好 mongo 环境
 
 1. 使用了 4.6+ 这段程序会报错
 ```
