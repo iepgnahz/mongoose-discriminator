@@ -2,7 +2,9 @@
 
 1. 需要提前准备好 mongo 环境
 
-1. 使用了 4.6+ 这段程序会报错
+1. 运行 node app.js 即可
+
+1. 使用了 mongoose 4.6+ 这段程序会报错
 ```
 events.js:160
       throw er; // Unhandled 'error' event
