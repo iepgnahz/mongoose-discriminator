@@ -4,8 +4,6 @@ var async = require('async');
 mongoose.connect('mongodb://localhost/demo');
 mongoose.Promise = global.Promise;
 
-var options = {discriminatorKey: 'kind'};
-
 var paperItemSchema = new Schema({
     createTime: {
         type: Number,
@@ -71,5 +69,6 @@ async.waterfall([
         .populate('paperItems')
         .exec((err, doc)=> {
             console.log(doc);
+            process.exit(0);
         })
 })
